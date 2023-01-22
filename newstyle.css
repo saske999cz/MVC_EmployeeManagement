@@ -1,0 +1,437 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+button.normal{
+    font-size: 13px;
+   font-weight: 400;
+   padding: 5px 30px 20px 30px;
+   color: white;
+   background-color: #0A5A99;
+   cursor: pointer;
+   border: 1px solid #0A5A99;
+   border-radius: 6px;
+   height: 20px;
+   outline: none;
+   transition: 0.2s;
+   margin-right: 10px;
+}
+
+#f1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../MVC_QuanLyNhanSu/Img/t1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    
+
+}
+
+#f1 h2{
+    font-size: 30px;
+    margin-left: 700px;
+
+}
+
+
+
+#f2{
+    display: flex;
+ margin-left: 200px;
+ flex-direction: column;
+ width: 10%;
+
+}
+
+#f2 table{
+    
+    border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 416%;
+    
+}
+
+#f2 table th{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 700;
+}
+#f2 table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 700;
+}
+#f2 table td a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    
+}
+
+#f2 table h3
+{  
+    color: #0A67AF;
+    font-size: 14px;
+   
+   
+   
+}
+
+
+
+#f2 table td:hover,
+#f2 table td:active
+{
+ background-color: #0A67AF;
+ color: white;
+ 
+ 
+}
+.slider{
+    width: 815px;
+    height: 460px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.slides{
+    width: 500%;
+    height: 460px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 460px;
+    border-radius: 20px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 815px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 70px;
+}
+.manual-btn:first-child{
+    margin-left: 20px;
+}
+.manual-btn:hover{
+    background-color: #40d3dc;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 815px;
+    justify-content: center;
+    margin-top: 420px;
+}
+
+.navigation-auto div{
+border: 2px solid #40d3dc;
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 70px;
+}
+
+.navigation-auto div:first-child{
+    margin-left: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40d3dc;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40d3dc;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40d3dc;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40d3dc;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: #40d3dc;
+}
+
+
+#f3 h1{
+    width: 815px;
+    padding-left: 335px;
+    border: 3px solid palevioletred;
+    border-radius: 15px;
+    background-color: palevioletred;
+    margin-bottom: 5px;
+    
+}
+
+
+#f4 img{
+    width: 350px;
+    height: 150px;
+    border-radius: 35px;
+
+
+}
+
+
+#f4radio1:checked ~ .small-img1{
+    border: 5px solid #40d3dc;
+}
+#f4radio2:checked ~ .small-img2{
+    border: 5px solid #40d3dc;
+
+}
+#f4radio3:checked ~ .small-img3{
+    border: 5px solid #40d3dc;
+
+}
+#f4radio4:checked ~ .small-img4{
+    border: 5px solid #40d3dc;
+
+}
+#f4radio5:checked ~ .small-img5{
+    border: 5px solid #40d3dc;
+
+}
+#f4 img:hover{
+    cursor: pointer;
+}
+
+#f5{
+    margin-top: 20px;
+    background-image: url("../MVC_QuanLyNhanSu/Img/t5 new.jpg");
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#f5 h3{
+    
+    margin-left: 905px;
+    padding-top: 100px;
+    color: darkblue;
+    border: 3px solid purple;
+    width: fit-content;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+
+}
+
+
+#login form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+  
+  }
+  
+  #login form input{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 15px;
+    border: 1px solid #A9A9A9;
+    border-radius: 15px;
+    margin-top: 18px;
+  }
+  #login h2{
+    padding-left: 270px;
+
+  }
+  
+  
+  #login form button:active{
+    background-color: royalblue;
+  }
+  #Buttons{
+    margin-left: 230px;
+  }
+    #OK{
+    background-color: #088170;
+    border-radius: 10px;
+    font-size: 15px;
+    }
+  #RESET{
+    background-color: #A9A9A9;
+    font-size: 20px;
+    width: 30px;
+  }
+  
+
+  #Form22 h2{
+    margin-left: 360px;
+    margin-bottom: 30px;
+  }
+
+
+  #Form33{
+    margin-left: 100px;
+  }
+
+  #Form33 h2{
+    margin-left: 270px;
+    margin-bottom: 30px;
+  }
+  
+
+  #Form33 input{
+    margin-right: 70px;
+    padding-left: 20px;
+    height: 30px;
+    font-size: 20px;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 15px;
+    border: 1px solid #A9A9A9;
+    border-radius: 15px;
+    margin-top: 18px;
+  }
+
+
+  #Form44{
+    margin-left: 160px;
+
+  }
+
+  #Form44 h2{
+    margin-left: 200px;
+  }
+
+  #Form44 select{
+    margin-right: 20px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid #A9A9A9;
+  }
+
+  #Form44 input{
+    margin-right: 20px;
+    height: 30px;
+    font-size: 20px;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 15px;
+    border: 1px solid #A9A9A9;
+    border-radius: 15px;
+    margin-top: 18px;
+    
+  }
+
+
+  #Form55{
+    margin-left: 160px;
+
+  }
+  #Form55 h2{
+    margin-left: 200px;
+  }
+
+  #Form55 select{
+    margin-right: 20px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid #A9A9A9;
+  }
+
+  #Form55 input{
+    margin-right: 20px;
+    height: 30px;
+    font-size: 20px;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 15px;
+    border: 1px solid #A9A9A9;
+    border-radius: 15px;
+    margin-top: 18px;
+    
+  }
+
+
+  @keyframes change{
+    0%
+    {
+        background-image: url("./Img/t4 1.jpg");
+    }
+    20%
+    {
+        background-image: url("../Img/t4 2.jpg");
+    }
+    40%
+    {
+        background-image: url("../Img/t4 3.png");
+    }
+    60%
+    {
+        background-image: url("../Img/t4 4.jpg");
+    }
+    80%
+    {
+        background-image: url("../Img/Trang Chu.jpg");
+    }
+    100%
+    {
+        background-image: url("../Img/t5.jpg");
+    }
+}
+
